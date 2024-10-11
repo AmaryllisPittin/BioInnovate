@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="../style/mainStyle.css">
     <link rel="stylesheet" href="../style/dimensions-and-spacing.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -73,42 +72,103 @@
         </div>
     </section>
     <section class="team">
+        <h2 class="team__h2">Notre équipe</h2>
         <div class="team-container">
             <div class="team-member">
                 <img class="team-member__img" src="../img/ClaraLeclerc.png" alt="Portrait de Clara Leclerc" class="portrait">
                 <h3 class="team-member__h3">Clara Leclerc</h3>
                 <p>Co-fondatrice & Directrice Générale (CEO)</p>
-                <a  href="#" class="more-info-link" onclick="openModal(event)">Plus d'information</a>
+                <a class="more-info-link" data-member="clara">Plus d'information</a>
               </div>
               
               <div class="team-member">
                 <img class="team-member__img" src="../img/PaulMoreau.png" alt="Portrait de Paul Moreau" class="portrait">
                 <h3 class="team-member__h3">Paul Moreau</h3>
                 <p>Co-fondateur & Directeur Scientifique (CSO)</p>
-                <a  href="#" class="more-info-link" onclick="openModal(event)">Plus d'information</a>
+                <a class="more-info-link" data-member="paul">Plus d'information</a>
               </div>
 
               <div class="team-member">
                 <img class="team-member__img" src="../img/MarieDupont.png" alt="Portrait de Marie Dupont" class="portrait">
                 <h3 class="team-member__h3">Marie Dupont</h3>
                 <p>Directrice des Opérations (COO)</p>
-                <a  href="#" class="more-info-link" onclick="openModal(event)">Plus d'information</a>
+                <a class="more-info-link" data-member="marie">Plus d'information</a>
               </div>
               
               <div class="team-member">
                 <img class="team-member__img" src="../img/ThomasBrunet.png" alt="Portrait de Thomas Brunet" class="portrait">
                 <h3 class="team-member__h3">Thomas Brunet</h3>
                 <p>Directeur Financier (CFO)</p>
-                <a  href="#" class="more-info-link" onclick="openModal(event)">Plus d'information</a>
+                <a class="more-info-link" data-member="thomas">Plus d'information</a>
               </div>
 
               <div class="team-member">
                 <img class="team-member__img" src="../img/AminaZouari.png" alt="Portrait de Amina Zouari" class="portrait">
                 <h3 class="team-member__h3">Amina Zouari</h3>
                 <p>Directrice des Partenariats et Collaborations</p>
-                <a  href="#" class="more-info-link" onclick="openModal(event)">Plus d'information</a>
+                <a class="more-info-link" data-member="amina">Plus d'information</a>
               </div>
         </div>
+
+        <!--MODALES-->
+
+        <div id="modal-clara" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img class="modal-content__img" src="../img/ClaraLeclerc.png" alt="Portrait de Clara Leclerc" class="portrait">
+              <h3 class="modal-content__h3">Clara Leclerc</h3>
+              <p class="modal-content__p">Co-fondatrice & Directrice Générale (CEO)</p>
+              <p class="modal-content__p">Avec plus de 15 ans d'expérience en biotechnologie, le Dr. Leclerc a mené des recherches pionnières dans les thérapies géniques et les nanotechnologies. 
+                Elle dirige BioInnovate avec une vision claire de transformer la recherche scientifique en solutions concrètes pour le secteur médical.</p>
+            </div>
+          </div>
+
+          <div id="modal-paul" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img class="modal-content__img" src="../img/PaulMoreau.png" alt="Portrait de Paul Moreau" class="portrait">
+              <h3 class="modal-content__h3">Paul Moreau</h3>
+              <p class="modal-content__p">Co-fondateur & Directeur Scientifique (CSO)</p>
+              <p class="modal-content__p">Expert reconnu en biologie moléculaire, le Pr. Moreau supervise la R&D de BioInnovate. 
+                Son travail sur les biocapteurs et les systèmes d’ingénierie génétique a conduit à plusieurs avancées brevetées.</p>
+            </div>
+          </div>
+
+          <div id="modal-marie" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img class="modal-content__img" src="../img/MarieDupont.png" alt="Portrait de Marie Dupont" class="portrait">
+              <h3 class="modal-content__h3">Marie Dupont</h3>
+              <p class="modal-content__p">Directrice des Opérations (COO)</p>
+              <p class="modal-content__p">Marie est spécialisée dans la gestion de projets biotechnologiques complexes. 
+                Elle coordonne les équipes techniques et veille à l’optimisation des processus de développement, de la recherche à la mise sur le marché des produits.</p>
+            </div>
+          </div>
+
+          <div id="modal-thomas" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img class="modal-content__img" src="../img/ThomasBrunet.png" alt="Portrait de Thomas Brunet" class="portrait">
+              <h3 class="modal-content__h3">Thomas Brunet</h3>
+              <p class="modal-content__p">Directeur Financier (CFO)</p>
+              <p class="modal-content__p">Fort de plus de 10 ans d'expérience dans la gestion financière d'entreprises technologiques, 
+                Thomas gère les investissements et la stratégie financière, assurant la croissance rapide de BioInnovate tout en maintenant une gestion financière rigoureuse.</p>
+            </div>
+          </div>
+
+          <div id="modal-amina" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img class="modal-content__img" src="../img/AminaZouari.png" alt="Portrait de Amina Zouari" class="portrait">
+              <h3 class="modal-content__h3">Amina Zouari</h3>
+              <p class="modal-content__p">Directrice des Partenariats et Collaborations</p>
+              <p class="modal-content__p">Docteure en biotechnologie, le Dr. Zouari est en charge des relations stratégiques avec les universités, laboratoires et partenaires industriels. 
+                Son expertise permet à BioInnovate de tisser des collaborations fructueuses à l’échelle mondiale.</p>
+            </div>
+          </div>
+
     </section>
+
+    <script src="../js/modal.js"></script>
 </body>
 </html>
