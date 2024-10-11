@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BioInnovate.com</title>
     <link rel="stylesheet" href="style/mainStyle.css">
+    <link rel="stylesheet" href="style/dimensions-and-spacing.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -15,7 +16,7 @@
             <img class="topbar__logo" src="img/logoText.png" alt="logo - BioInnovate">
             <div class="topbar-links-container">
                 <a class="topbar-links-container__link" href="index.html">Accueil</a>
-                <a class="topbar-links-container__link" href="index.html">A propos</a>
+                <a class="topbar-links-container__link" href="pages/a-propos.html">A propos</a>
                 <a class="topbar-links-container__link" href="index.html">Technologies & Innovations</a>
                 <a class="topbar-links-container__link" href="index.html">Partenariats & Collaborations</a>
                 <a class="topbar-links-container__link" href="index.html">Investisseurs</a>
@@ -42,4 +43,38 @@
         </div>
     </div>
 </body>
+<footer class="footer">
+    <form class="form" method="post">
+        <ul>
+            <li>
+              <label for="name">Nom:</label>
+              <input type="text" id="name" name="user_name" />
+            </li>
+            <li>
+              <label for="mail">E-mail professionnel:</label>
+              <input type="email" id="mail" name="user_mail" />
+            </li>
+            <li>
+                <label for="objet">Objet :</label>
+                <select id="objet" name="objet">
+                  <option value="partenariat">Partenariat</option>
+                  <option value="technologies">Informations sur nos technologies</option>
+                  <option value="presse">Presse / Médias</option>
+                  <option value="autre">Autre</option>
+                </select>
+                
+              </li>
+            <li>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </li>
+          </ul>
+          <div class="checkbox">
+            <input type="checkbox" id="autorisation" name="autorisation" required>
+            <label for="autorisation">J’accepte que BioInnovate utilise mes données conformément à sa Politique de Confidentialité.</label>
+          </div>
+          <input class="send" type="submit" value="Envoyer">
+    </form>
+    <div class="copyright">Copyright 2024 - site développé par Amaryllis PITTIN</div>
+</footer>
 </html>
